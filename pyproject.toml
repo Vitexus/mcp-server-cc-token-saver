@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
 dependencies = [
-    "fastmcp",
+    "fastmcp>=4.0.0a2",
     "openai",
     "python-dotenv",
 ]
