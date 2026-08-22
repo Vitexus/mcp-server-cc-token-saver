@@ -10,8 +10,8 @@ dist/
 debian/.debhelper/
 debian/debhelper-build-stamp
 debian/files
-debian/python3-cc-token-saver-mcp.postinst.debhelper
-debian/python3-cc-token-saver-mcp.prerm.debhelper
-debian/python3-cc-token-saver-mcp.substvars
-debian/python3-cc-token-saver-mcp/
+debian/cc-token-saver-mcp.postinst.debhelper
+debian/cc-token-saver-mcp.prerm.debhelper
+debian/cc-token-saver-mcp.substvars
+debian/cc-token-saver-mcp/
 

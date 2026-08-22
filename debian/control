@@ -14,7 +14,7 @@ Rules-Requires-Root: no
 Vcs-Git: https://github.com/Vitexus/cc_token_saver_mcp.git
 Vcs-Browser: https://github.com/Vitexus/cc_token_saver_mcp
 
-Package: python3-cc-token-saver-mcp
+Package: cc-token-saver-mcp
 Architecture: all
 Depends:
  ${misc:Depends},
@@ -22,6 +22,9 @@ Depends:
  python3-fastmcp,
  python3-openai,
  python3-dotenv,
+Provides: python3-cc-token-saver-mcp
+Replaces: python3-cc-token-saver-mcp (<< 1.0.0-2~)
+Breaks: python3-cc-token-saver-mcp (<< 1.0.0-2~)
 Description: MCP server that delegates tasks to a local LLM to save Claude Code tokens
  Reduce your Claude Code tokens with CC Token Saver MCP server that
  intelligently delegates simple tasks to your local LLM while keeping
