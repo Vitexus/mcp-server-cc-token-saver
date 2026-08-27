@@ -33,3 +33,14 @@ Description: MCP server that delegates tasks to a local LLM to save Claude Code 
  The MCP server exposes your local LLM as tools that Claude Code can use for
  code snippet generation, simple refactoring tasks, documentation writing,
  code reviews, and basic Q&A.
+
+Package: mcprack-mcp-server-cc-token-saver
+Architecture: all
+Depends:
+ ${misc:Depends},
+ mcprack (>= 1.5.1),
+ cc-token-saver-mcp (= ${binary:Version}),
+Description: Registers CC Token Saver MCP server into mcprack catalog
+ Companion package for cc-token-saver-mcp. Installing it registers the
+ cc-token-saver-mcp binary as an available MCP server in the local
+ mcprack instance; removing it unregisters it again.
