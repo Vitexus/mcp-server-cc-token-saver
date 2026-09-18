@@ -5,7 +5,7 @@
 String[] distributions = [
 //			'debian:bookworm',
 			'debian:trixie',
-			'debian:forky',
+			// 'debian:forky',    // python3-fastmcp depends on python3-mcp which is not installable on forky
 //			'ubuntu:jammy',
 //			'ubuntu:noble',
 //			'ubuntu:resolute',
