@@ -1,4 +1,4 @@
-Source: cc-token-saver-mcp
+Source: mcp-server-cc-token-saver
 Section: python
 Priority: optional
 Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
@@ -11,10 +11,10 @@ Build-Depends:
 Standards-Version: 4.7.0
 Homepage: https://github.com/Vitexus/cc_token_saver_mcp
 Rules-Requires-Root: no
-Vcs-Git: https://github.com/Vitexus/cc_token_saver_mcp.git
-Vcs-Browser: https://github.com/Vitexus/cc_token_saver_mcp
+Vcs-Git: https://github.com/Vitexus/mcp-server-cc-token-saver.git
+Vcs-Browser: https://github.com/Vitexus/mcp-server-cc-token-saver
 
-Package: cc-token-saver-mcp
+Package: mcp-server-cc-token-saver
 Architecture: all
 Depends:
  ${misc:Depends},
@@ -22,9 +22,9 @@ Depends:
  python3-fastmcp,
  python3-openai,
  python3-dotenv,
-Provides: python3-cc-token-saver-mcp
-Replaces: python3-cc-token-saver-mcp (<< 1.0.0-2~)
-Breaks: python3-cc-token-saver-mcp (<< 1.0.0-2~)
+Provides: cc-token-saver-mcp, python3-cc-token-saver-mcp
+Replaces: cc-token-saver-mcp (<< 1.0.1~), python3-cc-token-saver-mcp (<< 1.0.1~)
+Breaks: cc-token-saver-mcp (<< 1.0.1~), python3-cc-token-saver-mcp (<< 1.0.1~)
 Description: MCP server that delegates tasks to a local LLM to save Claude Code tokens
  Reduce your Claude Code tokens with CC Token Saver MCP server that
  intelligently delegates simple tasks to your local LLM while keeping
@@ -39,8 +39,8 @@ Architecture: all
 Depends:
  ${misc:Depends},
  mcprack (>= 1.5.1),
- cc-token-saver-mcp (= ${binary:Version}),
+ mcp-server-cc-token-saver (= ${binary:Version}),
 Description: Registers CC Token Saver MCP server into mcprack catalog
- Companion package for cc-token-saver-mcp. Installing it registers the
+ Companion package for mcp-server-cc-token-saver. Installing it registers the
  cc-token-saver-mcp binary as an available MCP server in the local
  mcprack instance; removing it unregisters it again.

@@ -1,3 +1,12 @@
+mcp-server-cc-token-saver (1.0.1-1) unstable; urgency=medium
+
+  * Rename package cc-token-saver-mcp → mcp-server-cc-token-saver
+    (Provides/Replaces/Breaks for cc-token-saver-mcp and
+    python3-cc-token-saver-mcp).
+  * Update companion Depends and Vcs URLs for the GitHub rename.
+
+ -- Vítězslav Dvořák <info@vitexsoftware.cz>  Mon, 21 Sep 2026 16:15:00 +0200
+
 cc-token-saver-mcp (1.0.0-1) UNRELEASED; urgency=low
 
   * Initial Debian packaging
