@@ -10,12 +10,13 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
 dependencies = [
-    "fastmcp>=4.0.0a2",
+    "fastmcp>=4.1.4",
     "openai",
     "python-dotenv",
 ]
 
 [project.scripts]
+mcp-server-cc-token-saver = "cc_token_saver_mcp.server:main"
 cc-token-saver-mcp = "cc_token_saver_mcp.server:main"
 
 [tool.setuptools.packages.find]
